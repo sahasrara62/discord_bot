@@ -1,2 +1,3 @@
 # discort_bot
-simple discord bot, implementation in python
+
+Implementing the programming assignment on discord bot.
