@@ -41,7 +41,16 @@ discord_bot has following functionality
     DATABASE_URL="postgresql://<username>:<password>@<host_url>:<port>/databasename
     DISCORD_TOKEN="ELKJQWEIOJOWIEIOQWMQWEOIQWEUQOIEJUQWEOI"
 
+### How to create tables through python 
+
+1. In terminal/Konsole open `discord_bot` drirectory
+2. open python shell ( first install all requirements)
+3. in python shell run following commands
+
+    a.  `from bot import _engine as engine`  
+    b.   `from bot.database import Base`   
+    c.  `Base.metadata.create_all(engine)`
+ 
 
 #### contact
-
   email: `uchiha.rana62@gmail.com`
