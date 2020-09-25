@@ -24,6 +24,8 @@ discord_bot has following functionality
 ### steps to add bot to your existing discord server
 
 1. copy the discord bot [url](https://discord.com/api/oauth2/authorize?client_id=758260433341251605&permissions=271969376&scope=bot)
+
+> `https://discord.com/api/oauth2/authorize?client_id=758260433341251605&permissions=271969376&scope=bot`
 2. login to your discord account
 3. paste the copied url in browser
 4. select the exesting server where you want to add bot, authorise the permissions
