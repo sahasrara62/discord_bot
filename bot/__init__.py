@@ -53,8 +53,9 @@ def get_recent_query(user_id, msg=None):
             result = result[:8]
 
         """ returning only 8 recent search query, """
-        for res in result:
-            yield res[0]
+        return [res[0] for res in result]
+        # for res in result:
+        #     yield res[0]
     else:
         # usign sequencematcher to check the ratio upto which two strig matched, setting matched limit to 0.4
         res = list(filter(lambda x: SequenceMatcher(None, msg, x[0]).ratio() > 0.4, result))
@@ -66,8 +67,9 @@ def get_recent_query(user_id, msg=None):
         final_res = set(res + res2)
 
         # returning back the results
-        for obj in final_res:
-            yield obj[0]
+        return [obj[0] for obj in final_res]
+        # for obj in final_res:
+        #     yield obj[0]
 
 
 def search_result(query, user_id):
