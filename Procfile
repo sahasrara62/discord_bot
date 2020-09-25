@@ -1,1 +1,3 @@
-web: python app.py
+heroku ps:scale web=0
+heroku ps:scale worker=1
+worker: python app.py

@@ -16,5 +16,6 @@ def search_google(query, **kwargs):
     """
     if not query:
         return "No search query found"
-    for obj in search(query, **kwargs):
-        yield obj
+    return list(search(query, **kwargs))
+    # for obj in search(query, **kwargs):
+    #     yield obj
