@@ -1,4 +1,4 @@
-from ._config import __config
+from .settings import config
 from .database import UserQueries, insert_data
 from .search import search_google
 from sqlalchemy import create_engine
@@ -6,14 +6,14 @@ from sqlalchemy.orm import sessionmaker
 
 from difflib import SequenceMatcher
 
-search_config = __config['search']
-database_config = __config['database']
-discord_config = __config['discord_bot']
 
-__engine = create_engine('postgresql://{}:{}@{}:{}/{}'.format(database_config['username'], database_config['password'],
-                                                              database_config['host'], database_config['port'],
-                                                              database_config['dbname']), echo=False)
-__Session = sessionmaker(bind=__engine)
+search_config = config['search']
+database_config = config['database']
+discord_config = config['discord_bot']
+
+_engine = create_engine('{}'.format(database_config['database_url']), echo=False)
+__Session = sessionmaker(bind=_engine)
+
 session = __Session()
 
 
