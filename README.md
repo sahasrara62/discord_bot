@@ -1,8 +1,7 @@
 # discord_bot
 
 
-Discord_discord bot is a simple discord bot, which is deployed on heroku cloud environment. This is assignment question for the bluestack MTS BACKEND Develoepr challenge https://github.com/bluestacks/backend-developer-challenge . if you find useful for you then, give a star.
-
+Discord_discord bot is a simple discord bot, which is deployed on heroku cloud environment. 
 discord_bot has following functionality
 
 1. It reply ***hey*** to user ***hi***
